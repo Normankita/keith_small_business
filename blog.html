@@ -1,0 +1,47 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Sweet Bites Blog | Sweet Delights Bakery</title> <link rel="stylesheet" href="styles.css"> </head> <body class="blog-page"> <header class="main-header">
+    angelscript
+    Copy
+    <h1 class="logo"><a href="index.html">Sweet Delights</a></h1>
+    
+    <nav class="primary-nav">
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li> 
+        <li><a href="faqs.html">FAQs</a></li>
+      </ul>
+    </nav>
+    </header> <main class="blog-container">
+    angelscript
+    Copy
+    <h2 class="section-title">Sweet Bites Blog</h2>
+    
+    <section class="posts">
+    
+      <article class="post">
+      
+        <img src="images/post1.jpg" alt="Cupcakes image" class="post-image">
+        
+        <h3 class="post-title"><a href="post1.html">Our New Cupcake Flavors</a></h3>
+        
+        <p class="post-excerpt">Check out the seasonal flavors we've added to our menu...</p>
+    
+        <a href="post1.html" class="read-more">Read More &rarr;</a>
+    
+      </article>
+    
+      <article class="post">
+      
+        <img src="images/post2.jpg" alt="Cookies image" class="post-image">
+        
+        <h3 class="post-title"><a href="post2.html">Handmade Cookie Decorating Workshop</a></h3>
+        
+        <p class="post-excerpt">Join us this Saturday for a fun decorating session!</p>
+    
+        <a href="post2.html" class="read-more">Read More &rarr;</a>
+    
+      </article>
+    
+      <!-- more posts... -->
+    
+    </section>
+    </main> <footer class="site-footer"> <p class="copyright">&copy; 2023 Sweet Delights Bakery</p> </footer> </body> </html> <style> /* Typography */ :root { --color-text: #333; --color-header: #ad6840; } body { font-family: 'Courier New', monospace; color: var(--color-text); } h1, h2, h3 { color: var(--color-header); } /* Layout */ .main-header { background: linear-gradient(to right, #f2daab, #ffe6cc); border-bottom: 5px solid var(--color-header); } .primary-nav { display: flex; justify-content: flex-end; } .blog-container { max-width: 900px; margin: 0 auto; padding: 2em; } /* Posts */ .posts { display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 2em; } .post { background: white; padding: 1em; border-radius: 10px; box-shadow: 0px 5px 10px rgba(0,0,0,0.1); } .post-image { width: 100%; border-radius: 10px 10px 0 0; } /* More styles */ .read-more { display: inline-block; background: var(--color-header); color: white; padding: 0.5em 1em; border-radius: 5px; } </style>
