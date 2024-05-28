@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zahra's Crazy Page</title>
+    <style>
+      /* Fonts */
+      body {
+        font-family: "Georgia", serif;
+        padding: 50px;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Comic Sans MS", cursive;
+      } /* Colors */
+      body {
+        background-color: black;
+        color: whitesmoke;
+      }
+      header {
+        background-color: rgb(137, 124, 137);
+        color: white;
+        border-radius: 10px;
+      } /* Other Styles */
+      header {
+        text-align: center;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      h1 {
+        font-size: 36px;
+      }
+      nav a {
+        padding: 10px 15px;
+        color: rgb(51, 35, 38);
+        text-decoration: none;
+        border: 2px solid rgb(225, 123, 225);
+        border-radius: 5px;
+      }
+
+      #family {
+        border: 3px dotted rgb(149, 149, 194);
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 50px;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 3px solid rgb(149, 149, 194);
+      }
+      #image {
+        background-image: url(Light.jpg);
+        border-radius: 100px;
+        display: flex;
+        padding: 0%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 25%;
+        margin-right: 25%;
+      }
+
+      /* epic starts here */
+      .epic {
+        height: 400px;
+        background: black;
+        color: white;
+        position: relative;
+      }
+      .stars {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 2px;
+        height: 2px;
+        background: white;
+        box-shadow: /* Stars */ white 0 -10px 10px, white 0 -10px 10px,
+          /* Stars with glow */ white 0 -50px 20px, inset white 0 -200px 50px; /* Animation*/
+        animation: drifting infinite 30s linear;
+      }
+      @keyframes drifting {
+        from {
+          transform: translateY(0px);
+        }
+        to {
+          transform: translateY(1000px);
+        }
+      } /* UFO */
+      .ufo {
+        width: 150px;
+        height: 150px;
+        background: linear-gradient(purple, darkblue);
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        right: 100px;
+        animation: flying 10s ease infinite;
+      }
+      @keyframes flying {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(400px);
+        }
+      }
+      .light {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: yellow;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: blinking 1.5s infinite;
+      }
+      @keyframes blinking {
+        from,
+        to {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      } /* Button */
+      .btn {
+        background-color: chartreuse;
+        border-radius: 20px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Crazy Zahra</h1>
+      <nav>
+        <a href="main.html">Home</a> <a href="hometown.html">Hometown</a>
+        <a href="favourite.html">Favourites</a>
+        <a href="education.html">Education</a>
+        <a href="crazy.html">Crazy</a>
+      </nav>
+    </header>
+    <div class="page">
+      <section id="fun">
+        <h2>Having Fun!</h2>
+        <div id="image">
+          <img src="me.jpg" alt="" />
+          <img src="mine.jpg" alt="" />
+          <img src="Background.jpg" alt="" />
+        </div>
+      </section>
+      <section id="wild">
+        <h2>Going Wild!</h2>
+        <marquee behavior="scroll" direction="left">
+          you need me g crazy??!!! Check out my new Crazy Page
+        </marquee>
+      </section>
+      <section class="epic">
+        <div class="stars"></div>
+        <h2> there is A Galaxy Far, Far Away...</h2>
+        <p>
+          this is just a minimal I could make, now you cant handle my full crazy
+        </p>
+        <div class="ufo"><div class="light"></div></div>
+        <a href="#" class="btn">Beam Me Up!</a>
+      </section>
+    </div>
+  </body>
+</html>

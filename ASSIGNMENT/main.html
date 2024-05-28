@@ -1,26 +1,91 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> main </title>
-
-    <body>
-<h1>Welcome To My Page</h1>
-<h2>MYSELF</h2>
-<p>My name is Zahra Ally Hassan,a muslim and a 21 years old girl. </p>
-<P>I am a Tanzanian, my hometown is Tanga.</P>
-<p>I live at Morogoro Region in Tanzania. </p>
-<p>I study at Mzumbe University (main campus)I am taking my Degree studies on Information Technology and systems(BSc.ITS).</p>
-
-
-<h2>MY FAMILY</h2>
-<P>My parents currently lives at Dodoma for working purpose they live with my two young siblings.</P>
-<p>I am the third child in a family of 5 childrenI have two brothers and two sisters, their names are Ibrahim, Mahmood, Ilham and Munirah.</p>
-<p>My little sister and brother are Mahmood and Munirah, they are twins and study at East Africa Primary School and they are in  grade five.</p>
-<p>My older brother Ibrahim and sister Ilham both are married.</p>
-    </body>
-
-    <a href="file:///F:/Users/NORZAH/Desktop/WEB2024/ASSIGNMENT/hometown.html " target="blank">HOMETOWN</a>
+    <title>main</title>
+    <style>
+      /* Fonts */
+      body {
+        font-family: "Georgia", serif;
+        padding: 50px;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Comic Sans MS", cursive;
+      } /* Colors */
+      body {
+        background-color: rgb(219, 180, 186);
+        color: rgb(55, 9, 33);
+      }
+      header {
+        background-color: rgb(80, 54, 80);
+        color: white;
+        border-radius: 10px;
+      }  /* Other Styles */
+      header {
+        text-align: center;
+      }
+      h1 {
+        font-size: 36px;
+      }
+      nav a {
+        padding: 10px 15px;
+        color: pink;
+        text-decoration: none;
+        border: 2px solid purple;
+        border-radius: 5px;
+      }
+      
+      #family
+       {
+        border: 3px dotted rgb(149, 149, 194);
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 50px;
+      }
+    </style>
   </head>
 
+  <body>
+    <header>
+      <h1>Zahra Ally Hassan</h1>
+      <nav>
+        <a href="main.html">Home</a> <a href="hometown.html">Hometown</a>
+        <a href="favourite.html">Favourites</a>
+        <a href="education.html">Education</a>
+        <a href="crazy.html">Crazy</a>
+      </nav>
+    </header>
+    <h1>Welcome To My Page</h1>
+    <h2>MYSELF</h2>
+    <p>My name is Zahra Ally Hassan,a muslim and a 21 years old girl.</p>
+    <p>I am a Tanzanian, my hometown is Tanga.</p>
+    <p>I live at Morogoro Region in Tanzania.</p>
+    <p>
+      I study at Mzumbe University (main campus)I am taking my Degree studies on
+      Information Technology and systems(BSc.ITS).
+    </p>
 
+    <h2>MY FAMILY</h2>
+    <div id="family">
+      <p>
+        My parents currently lives at Dodoma for working purpose they live with my
+        two young siblings.<br />
+        I am the third child in a family of 5 childrenI have two brothers and two
+        sisters, their names are <ul>
+          <li>Ibrahim</li>
+          <li>Mahmood</li>
+          <li>Ilham</li>
+          <li>Munirah</li>
+        </ul>.<br/>
+        My little sister and brother are <ul>
+          <li>Mahmood</li>
+          <li>Munirah</li>
+        </ul>, they are twins and
+        study at East Africa Primary School and they are in grade five.<br />
+        My older brother Ibrahim and sister Ilham both are married.
+      </p>
+    </div>
+    
+  </body>
 </html>
